@@ -32,7 +32,9 @@
 }
 
 .main-image-c1-2 {
-  background-image: url("../img/1080x1440-c1-bg-about.jpg");
+  background-image: url("../img/wasim_r.jpg");
+  
+  box-shadow: 0px 0px  10px black;
 }
 
 .main-image-c1-3 {
