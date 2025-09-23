@@ -42,7 +42,7 @@
   height: 100px;
 }
 
-.loader2:before , .loader:after{
+.loader2:before , .loader2:after{
   content: '';
   border-radius: 50%;
   position: absolute;
