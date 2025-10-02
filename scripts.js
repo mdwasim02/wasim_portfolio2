@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         loader.style.display = 'none';
         site?.classList.remove('hidden');
-      }, 3000);
+      }, 300);
     }
   });
 
@@ -189,4 +189,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ========== YEAR IN FOOTER ==========
   document.getElementById('year').textContent = new Date().getFullYear();
+
 });
