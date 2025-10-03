@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         loader.style.display = 'none';
         site?.classList.remove('hidden');
-      }, 300);
+      }, 3000);
     }
   });
 
@@ -50,13 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.textContent = document.body.classList.contains('light-mode') ? '☼' : '☾';
   });
 
-  // ========== REAL-TIME CLOCK ==========
+  // ========== REAL-TIME DATE + CLOCK ==========
   const clockElement = document.getElementById('real-time-clock');
   function updateClock() {
     if (!clockElement) return;
     const now = new Date();
-    const timeOptions = { second: '2-digit' , hour: '2-digit', minute: '2-digit', hour12: true };
-    clockElement.textContent = now.toLocaleTimeString('en-US', timeOptions);
+
+    // Date format
+    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const dateStr = now.toLocaleDateString('en-US', dateOptions);
+
+    // Time format
+    const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    const timeStr = now.toLocaleTimeString('en-US', timeOptions);
+
+    // Final output
+    clockElement.textContent = `${dateStr} | ${timeStr}`;
   }
   updateClock();
   setInterval(updateClock, 1000);
@@ -189,5 +198,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ========== YEAR IN FOOTER ==========
   document.getElementById('year').textContent = new Date().getFullYear();
-
 });
