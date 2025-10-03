@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const now = new Date();
 
     // Date format
-    const dateOptions = { weekday: 'long', year: 'numeric', day: 'numeric', month: 'long' };
+    const dateOptions = { weekday: 'long', year: 'numeric', day: 'long', month: 'long' };
     const dateStr = now.toLocaleDateString('en-US', dateOptions);
 
     // Time format
@@ -199,4 +199,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== YEAR IN FOOTER ==========
   document.getElementById('year').textContent = new Date().getFullYear();
 });
+
 
