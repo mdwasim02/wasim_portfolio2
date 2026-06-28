@@ -1,4 +1,4 @@
-/* /* styles.css
+/* styles.css
    New "Aura" Theme for Md Wasim Portfolio
 */
 
@@ -361,4 +361,4 @@ body.light-mode .header.scrolled { background-color: rgba(255, 255, 255, 0.8); }
   border: 1px solid var(--input-border);
   transition: all var(--trans);
   font-size: 1.2rem; /* Increased size for icons */
-} */
+}
