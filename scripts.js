@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         loader.style.display = 'none';
         site?.classList.remove('hidden');
-      }, 3000);
+      }, 1400);
     }
   });
 
