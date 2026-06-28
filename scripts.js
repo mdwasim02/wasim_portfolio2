@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========== HERO TYPEWRITER EFFECT ==========
   const typewriterTextElement = document.getElementById('typewriter-text');
   if (typewriterTextElement) {
-    const phrases = ['Frontend Developer.', 'UI/UX Enthusiast.', 'Creative Coder.'];
+    const phrases = ['QA Engineer.', 'Frontend Developer.', 'UI/UX Enthusiast.', 'Creative Coder.'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
